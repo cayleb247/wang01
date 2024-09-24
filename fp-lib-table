@@ -4,4 +4,5 @@
   (lib (name "XIAO_PCB")(type "KiCad")(uri "${KIPRJMOD}/Seeeduino-xiao-rp2040-KiCAD-Library/XIAO_PCB.pretty")(options "")(descr ""))
   (lib (name "random-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/random-keyboard-parts.pretty")(options "")(descr ""))
   (lib (name "ScottoKeebs_Components")(type "KiCad")(uri "${KIPRJMOD}/footprints/ScottoKeebs_Components.pretty")(options "")(descr ""))
+  (lib (name "Rotary_encoder_footprint")(type "KiCad")(uri "${KIPRJMOD}/Rotary_encoder_footprint")(options "")(descr ""))
 )

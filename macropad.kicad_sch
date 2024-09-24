@@ -5,33 +5,31 @@
 	(uuid "50f80a6f-210d-4ab9-8d87-7f65f623c291")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:D_Small"
+		(symbol "Device:D"
 			(pin_numbers hide)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at -1.27 2.032 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "D_Small"
-				(at -3.81 -2.032 0)
+			(property "Value" "D"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -40,7 +38,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -48,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode, small symbol"
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -93,10 +91,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_Small_0_1"
+			(symbol "D_0_1"
 				(polyline
 					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -108,7 +106,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 0) (xy 0.762 0)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -120,7 +118,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -131,10 +129,10 @@
 					)
 				)
 			)
-			(symbol "D_Small_1_1"
+			(symbol "D_1_1"
 				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
+					(at -3.81 0 0)
+					(length 2.54)
 					(name "K"
 						(effects
 							(font
@@ -151,8 +149,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
+					(at 3.81 0 180)
+					(length 2.54)
 					(name "A"
 						(effects
 							(font
@@ -170,24 +168,22 @@
 				)
 			)
 		)
-		(symbol "Device:Polyfuse_Small"
-			(pin_numbers hide)
+		(symbol "Device:RotaryEncoder_Switch"
 			(pin_names
-				(offset 0)
-			)
+				(offset 0.254) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "F"
-				(at -1.905 0 90)
+			(property "Reference" "SW"
+				(at 0 6.604 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Polyfuse_Small"
-				(at 1.905 0 90)
+			(property "Value" "RotaryEncoder_Switch"
+				(at 0 -6.604 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -195,16 +191,24 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 1.27 -5.08 0)
+				(at -3.81 4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "~"
+				(at 0 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -213,7 +217,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(property "ki_keywords" "rotary switch encoder switch push button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -222,7 +226,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+			(property "ki_fp_filters" "RotaryEncoder*Switch*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -231,19 +235,116 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*polyfuse* *PTC*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Polyfuse_Small_0_1"
+			(symbol "RotaryEncoder_Switch_0_1"
 				(rectangle
-					(start -0.508 1.27)
-					(end 0.508 -1.27)
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.381 0)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.381 2.667)
+					(mid -3.0988 -0.0635)
+					(end -0.381 -2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.778) (xy -0.635 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -1.778) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 1.778) (xy -0.127 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -2.032)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -254,7 +355,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0 -2.54)
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 2.032)
 					)
 					(stroke
 						(width 0)
@@ -266,10 +367,92 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
+						(xy 0.254 -3.048) (xy -0.508 -2.794) (xy 0.127 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 2.921) (xy -0.508 2.667) (xy 0.127 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.81 0) (xy -3.81 -1.016) (xy -3.302 -2.032)
 					)
 					(stroke
 						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0) (xy -3.81 0) (xy -3.81 1.016) (xy -3.302 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -277,18 +460,18 @@
 					)
 				)
 			)
-			(symbol "Polyfuse_Small_1_1"
+			(symbol "RotaryEncoder_Switch_1_1"
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.635)
-					(name "~"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -297,16 +480,70 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.635)
-					(name "~"
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -316,43 +553,40 @@
 				)
 			)
 		)
-		(symbol "MX_Alps_Hybrid:MX-NoLED"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "MOUDLE-SEEEDUINO-XIAO:MOUDLE-SEEEDUINO-XIAO"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MX"
-				(at -0.635 3.81 0)
+			(property "Reference" "U"
+				(at -16.51 11.43 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MX-NoLED"
-				(at -0.635 1.27 0)
+			(property "Value" "MOUDLE-SEEEDUINO-XIAO"
+				(at -3.81 -11.43 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
 				)
 			)
 			(property "Footprint" ""
-				(at -15.875 -0.635 0)
+				(at -16.51 2.54 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
-				(at -15.875 -0.635 0)
+				(at -16.51 2.54 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
@@ -366,93 +600,437 @@
 					(hide yes)
 				)
 			)
-			(symbol "MX-NoLED_0_0"
+			(symbol "MOUDLE-SEEEDUINO-XIAO_0_1"
 				(rectangle
-					(start -2.54 2.54)
-					(end 1.27 -1.27)
+					(start -16.51 10.16)
+					(end 19.05 -10.16)
 					(stroke
 						(width 0)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.127)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 0 1.27) (xy -1.27 1.905)
-					)
-					(stroke
-						(width 0.127)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "COL"
-					(at 3.175 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "ROW"
-					(at 0 -1.905 900)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify right)
 					)
 				)
 			)
-			(symbol "MX-NoLED_1_1"
+			(symbol "MOUDLE-SEEEDUINO-XIAO_1_1"
 				(pin passive line
-					(at 3.81 1.27 180)
+					(at -19.05 7.62 0)
 					(length 2.54)
-					(name "COL"
+					(name "PA02_A0_D0"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at -1.27 -3.81 90)
+					(at 21.59 -2.54 180)
 					(length 2.54)
-					(name "ROW"
+					(name "PA5_A9_D9_MISO"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "PA6_A10_D10_MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 2.54 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 5.08 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 7.62 180)
+					(length 2.54)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 5.08 0)
+					(length 2.54)
+					(name "PA4_A1_D1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 2.54 0)
+					(length 2.54)
+					(name "PA10_A2_D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 0 0)
+					(length 2.54)
+					(name "PA11_A3_D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 -2.54 0)
+					(length 2.54)
+					(name "PA8_A4_D4_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 -5.08 0)
+					(length 2.54)
+					(name "PA9_A5_D5_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.05 -7.62 0)
+					(length 2.54)
+					(name "PB08_A6_D6_TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 -7.62 180)
+					(length 2.54)
+					(name "PB09_A7_D7_RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 -5.08 180)
+					(length 2.54)
+					(name "PA7_A8_D8_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ScottoKeebs:Placeholder_Keyswitch"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Keyswitch"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Keyswitch_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -675,1259 +1253,582 @@
 				)
 			)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "random-keyboard-parts:Molex-0548190589"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "USB"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "Molex-0548190589"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Molex-0548190589_0_0"
-				(polyline
-					(pts
-						(xy 6.35 -2.54) (xy 6.35 6.35)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 8.89 -2.54)
-					(end -6.35 6.35)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Molex-0548190589_1_1"
-				(pin input line
-					(at -5.08 -7.62 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 -7.62 90)
-					(length 5.08)
-					(name "ID"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -7.62 90)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -7.62 90)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 -7.62 90)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -7.62 90)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "xiao-rp2040:XIAO-RP2040"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "XIAO-RP2040"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XIAO-RP2040_0_1"
-				(rectangle
-					(start -12.7 10.16)
-					(end 13.97 -10.16)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "XIAO-RP2040_1_1"
-				(pin bidirectional line
-					(at -15.24 7.62 0)
-					(length 2.54)
-					(name "D0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -2.54 180)
-					(length 2.54)
-					(name "D9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 0 180)
-					(length 2.54)
-					(name "D10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 2.54 180)
-					(length 2.54)
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 5.08 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 7.62 180)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 5.08 0)
-					(length 2.54)
-					(name "D1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 2.54)
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "D3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -2.54 0)
-					(length 2.54)
-					(name "D4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -5.08 0)
-					(length 2.54)
-					(name "D5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 -7.62 0)
-					(length 2.54)
-					(name "D6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -7.62 180)
-					(length 2.54)
-					(name "D7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 16.51 -5.08 180)
-					(length 2.54)
-					(name "D8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
-		(at 115.57 80.01)
+		(at 148.59 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "03010767-9296-4b42-99a8-c550d69c0345")
+		(uuid "052c8f77-c597-4dbf-8d0f-22eba2f23f1b")
 	)
 	(junction
-		(at 68.58 102.87)
+		(at 165.1 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0c1ff635-1378-44b7-b8f1-72517d85fc31")
+		(uuid "085b349b-33fb-4981-bd17-6e3166a5b7ff")
 	)
 	(junction
-		(at 81.28 90.17)
+		(at 140.97 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "19ef8145-f85c-4229-8509-3134b6fcf9d2")
+		(uuid "08c5b0ae-5023-459b-b04b-9e5f9923e3fd")
 	)
 	(junction
-		(at 81.28 77.47)
+		(at 148.59 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1c782efb-2b0f-40f7-a8a6-e2d7a7dc640f")
+		(uuid "0f9ff967-9d95-4aaa-968a-97f9817ae077")
 	)
 	(junction
-		(at 68.58 90.17)
+		(at 160.02 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1ea0f64b-2b75-4540-84f6-717604b6d96b")
+		(uuid "2ba20de2-b7b6-4268-83d9-3107012cbfc6")
 	)
 	(junction
-		(at 93.98 77.47)
+		(at 165.1 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f01369d-7138-4ba0-a837-19353472a51a")
+		(uuid "2f32b592-8b45-41bc-bb6f-8d8d5da94689")
 	)
 	(junction
-		(at 81.28 102.87)
+		(at 140.97 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34ec6eb5-cfd6-42d1-a9fa-a594dd343bb1")
+		(uuid "3d1309aa-248b-475a-9341-4e881bac6665")
 	)
 	(junction
-		(at 93.98 102.87)
+		(at 153.67 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4d02b300-a403-4f45-a5c9-671c1d7dfdc2")
+		(uuid "6e39a90e-b4c1-416f-9f62-59cf90ed4673")
 	)
 	(junction
-		(at 62.23 40.64)
+		(at 135.89 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4f824282-baa4-4984-a92d-665ec22bb1fa")
+		(uuid "7368c766-d1cd-4f3d-a062-0c642327238b")
 	)
 	(junction
-		(at 81.28 115.57)
+		(at 171.45 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5b0b8fed-5fab-4e84-a2b9-304703761fa1")
+		(uuid "76fc6640-4d79-4a93-96d9-bb31d8fabd81")
 	)
 	(junction
-		(at 102.87 80.01)
+		(at 123.19 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5b951369-37bc-4430-aec0-2623863860c4")
+		(uuid "7f21a03b-7c1b-4512-9e11-81fecfbf6a1e")
 	)
 	(junction
-		(at 115.57 92.71)
+		(at 148.59 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5f4dd281-3943-45e3-b0d8-eacaafab314f")
+		(uuid "7f40a223-f9ef-4d15-997c-e3eb232ae414")
 	)
 	(junction
-		(at 93.98 115.57)
+		(at 135.89 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "624a042f-8cc8-4a61-9cfd-1c1bc6195b1d")
+		(uuid "8a356a54-990a-43fa-bf5b-33d539f1c6ef")
 	)
 	(junction
-		(at 102.87 92.71)
+		(at 153.67 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8eaddf0f-2b18-4f35-8a2c-472553450511")
+		(uuid "97e71ff8-5fa4-4113-bb3e-49afc753f78e")
 	)
 	(junction
-		(at 93.98 90.17)
+		(at 165.1 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac6ea2b5-2160-438c-b284-4a97bc940344")
+		(uuid "9e9b8b9a-fba0-41a7-93b8-f80c0c5bbf9c")
 	)
 	(junction
-		(at 115.57 67.31)
+		(at 123.19 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b46c6ee1-a0a4-44aa-bd2b-bb185aaedaef")
+		(uuid "a2102ad3-f183-4eeb-8820-12819d91d9b1")
 	)
 	(junction
-		(at 90.17 67.31)
+		(at 153.67 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c16d40cf-394a-44d5-bf69-cf597b6b40f1")
+		(uuid "b2740291-81e0-4ac5-9352-673d00fed9a0")
 	)
 	(junction
-		(at 90.17 80.01)
+		(at 165.1 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ce12339c-555a-4180-8789-f46968363dcb")
+		(uuid "b8f3a92c-6e08-4ff2-b921-f3e115e68a4b")
 	)
 	(junction
-		(at 90.17 92.71)
+		(at 140.97 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d472e500-c505-400e-8f82-aad7ba9e3f4b")
+		(uuid "b8f81faf-550a-4f89-a5b5-46e6e6d898f7")
 	)
 	(junction
-		(at 77.47 80.01)
+		(at 140.97 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e54e1bdb-14f9-44a3-8cf3-7e55a360826a")
+		(uuid "d003bd30-fab5-4198-9e86-d50326eea97d")
 	)
 	(junction
-		(at 68.58 115.57)
+		(at 135.89 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e6156321-c71c-49f4-b5b0-aa096a0061b6")
+		(uuid "d10e7b98-2414-4d71-bc06-2f1bc2b072a2")
 	)
 	(junction
-		(at 77.47 92.71)
+		(at 153.67 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e8cd9fa0-7ac1-4802-bad2-fa0cd7b0361b")
+		(uuid "e6733ca6-9d2a-4ffa-aea3-12ef492a3ad1")
 	)
 	(junction
-		(at 102.87 67.31)
+		(at 160.02 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f8b73b66-0c0c-4769-aeee-d865be2e87d7")
+		(uuid "f109e1fa-eba0-45a1-961e-922ae6e57c83")
+	)
+	(junction
+		(at 160.02 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1339227-99cf-44e6-b7ae-4b4b02dca4c1")
+	)
+	(junction
+		(at 123.19 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1d57536-fde5-494e-bea9-cd4565ab1f0b")
 	)
 	(wire
 		(pts
-			(xy 90.17 92.71) (xy 90.17 105.41)
+			(xy 128.27 80.01) (xy 140.97 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01931a1d-39ac-4556-a700-6b52e1ce8ae2")
+		(uuid "0162bdb1-33e2-445d-9ab8-d85b6cbf0395")
 	)
 	(wire
 		(pts
-			(xy 81.28 77.47) (xy 93.98 77.47)
+			(xy 160.02 86.36) (xy 160.02 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0285b0f4-1a96-4a0a-9a51-c9bccbbf801a")
+		(uuid "0783067f-a44c-4f7b-929d-6a9ff55a231d")
 	)
 	(wire
 		(pts
-			(xy 102.87 67.31) (xy 102.87 80.01)
+			(xy 128.27 99.06) (xy 140.97 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "052c5068-1f9a-4f1b-9edf-2c46b61ad145")
+		(uuid "07aad97b-de05-4a7b-96de-72d334a2a9e0")
 	)
 	(wire
 		(pts
-			(xy 53.34 50.8) (xy 55.88 50.8)
+			(xy 153.67 99.06) (xy 165.1 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0ba4a40a-7747-4342-866e-71d17c631eff")
+		(uuid "139bc6c1-189c-4732-889d-d8f3eeffac8d")
 	)
 	(wire
 		(pts
-			(xy 68.58 110.49) (xy 72.39 110.49)
+			(xy 153.67 80.01) (xy 165.1 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0db89248-3988-49c0-9028-71af9f923772")
+		(uuid "1c31e44f-acb7-4abc-b743-f4d1cc8f5cf3")
 	)
 	(wire
 		(pts
-			(xy 73.66 40.64) (xy 81.28 40.64)
+			(xy 123.19 86.36) (xy 123.19 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e61f03a-ffbc-4e08-a14a-f71311860c5e")
+		(uuid "25b20129-5d95-400c-94e4-c8ae7c62548c")
 	)
 	(wire
 		(pts
-			(xy 60.96 77.47) (xy 81.28 77.47)
+			(xy 140.97 80.01) (xy 153.67 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "111581d1-dc75-49f2-bed7-7b376fd18b6d")
+		(uuid "29f74d3c-b8c9-4c5c-b570-79cb8b56383f")
 	)
 	(wire
 		(pts
-			(xy 60.96 102.87) (xy 68.58 102.87)
+			(xy 160.02 57.15) (xy 160.02 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1982895f-b654-49ca-98ae-f072a5259693")
+		(uuid "34a5886e-bff8-4589-8746-a801d93b3cd3")
 	)
 	(wire
 		(pts
-			(xy 81.28 115.57) (xy 93.98 115.57)
+			(xy 140.97 118.11) (xy 153.67 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19edff3f-ebb1-40d8-a22b-eb7bd1b0dbab")
+		(uuid "41b1670e-52aa-47fd-bf88-6406f948f5f9")
 	)
 	(wire
 		(pts
-			(xy 106.68 85.09) (xy 110.49 85.09)
+			(xy 148.59 57.15) (xy 148.59 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e2d348b-644c-461f-aeb8-2980969f2e46")
+		(uuid "4f9f2eef-dc12-4646-83ba-16feab588e31")
 	)
 	(wire
 		(pts
-			(xy 68.58 85.09) (xy 72.39 85.09)
+			(xy 160.02 67.31) (xy 160.02 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "282cf59d-56d7-4958-a8ac-fb2df95851cc")
+		(uuid "514a1b46-ec6e-4692-8882-9f0cc379c42c")
 	)
 	(wire
 		(pts
-			(xy 93.98 115.57) (xy 106.68 115.57)
+			(xy 135.89 86.36) (xy 135.89 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c4c02b8-ab55-4846-a29e-6b7aed207774")
+		(uuid "56503340-2eef-49e9-b78c-81c41c15c93b")
 	)
 	(wire
 		(pts
-			(xy 102.87 92.71) (xy 102.87 105.41)
+			(xy 148.59 67.31) (xy 148.59 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38a84a5a-2a0e-4434-887f-a6e83224295f")
+		(uuid "5b2b4201-9f3c-403a-b292-3c4595fa76f8")
 	)
 	(wire
 		(pts
-			(xy 68.58 102.87) (xy 81.28 102.87)
+			(xy 165.1 137.16) (xy 173.99 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39efd325-dfae-42e6-aca4-30e71b5d626c")
+		(uuid "5bfd7e46-fe5d-4897-a942-0568baf3bf23")
 	)
 	(wire
 		(pts
-			(xy 81.28 110.49) (xy 85.09 110.49)
+			(xy 140.97 99.06) (xy 153.67 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d8c9ff3-ce45-4f3d-b998-eb66758f6cf8")
+		(uuid "5e06db11-dab8-406c-81d8-6c784dab7382")
 	)
 	(wire
 		(pts
-			(xy 62.23 40.64) (xy 68.58 40.64)
+			(xy 171.45 43.18) (xy 158.75 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "427e3537-7f5d-418c-a45f-d65d4a93d15d")
+		(uuid "67573954-0cab-41dd-9b67-e4ce3d94d545")
 	)
 	(wire
 		(pts
-			(xy 81.28 85.09) (xy 85.09 85.09)
+			(xy 160.02 105.41) (xy 160.02 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4341c53b-f5d1-4a33-bdd0-b3db1cd2bc4d")
+		(uuid "6b97bdc7-e0f1-46b5-8660-18cbc6e690db")
 	)
 	(wire
 		(pts
-			(xy 102.87 58.42) (xy 102.87 67.31)
+			(xy 158.75 43.18) (xy 158.75 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4511e094-0357-4fc9-8876-925d1912bb8c")
+		(uuid "7325cbfa-f66b-43f0-8117-9b06f6a12c02")
 	)
 	(wire
 		(pts
-			(xy 93.98 77.47) (xy 106.68 77.47)
+			(xy 179.07 34.29) (xy 185.42 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4648fa07-3c7c-4831-834d-5d53ddf0167d")
+		(uuid "83b4edbc-b4fb-4580-a15f-7c2fb5610aae")
 	)
 	(wire
 		(pts
-			(xy 60.96 115.57) (xy 68.58 115.57)
+			(xy 165.1 80.01) (xy 173.99 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c98cba4-d200-437f-a45d-d6031ed54ef5")
+		(uuid "89fa7734-75ae-4751-9b40-15eecec315c6")
 	)
 	(wire
 		(pts
-			(xy 68.58 90.17) (xy 81.28 90.17)
+			(xy 242.57 95.25) (xy 256.54 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55ba70cb-ab3d-47a9-9aee-b29313215f14")
+		(uuid "8aa170ca-e964-4541-a4b6-fcc13063dec7")
 	)
 	(wire
 		(pts
-			(xy 68.58 97.79) (xy 72.39 97.79)
+			(xy 123.19 105.41) (xy 123.19 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "578aa203-b64c-4746-988a-b2eb961ebf20")
+		(uuid "9638c9e6-03a0-4da6-b63b-10abef411ed3")
 	)
 	(wire
 		(pts
-			(xy 77.47 72.39) (xy 77.47 80.01)
+			(xy 153.67 137.16) (xy 165.1 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f6e49af-5452-4712-b984-7f6247f11555")
+		(uuid "99443545-a2bd-45bf-b864-043b26e88dc6")
 	)
 	(wire
 		(pts
-			(xy 77.47 80.01) (xy 77.47 92.71)
+			(xy 135.89 105.41) (xy 135.89 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "64ea13e6-f9f4-49df-8629-1250306bb288")
+		(uuid "a5556dc3-afae-4cb6-b667-de1d98a82804")
 	)
 	(wire
 		(pts
-			(xy 81.28 97.79) (xy 85.09 97.79)
+			(xy 148.59 86.36) (xy 148.59 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c0bf336-5161-41dd-a7c4-60d7a2c951a1")
+		(uuid "a691e5a2-820a-4f2a-986f-bc691fbb695a")
 	)
 	(wire
 		(pts
-			(xy 115.57 67.31) (xy 115.57 80.01)
+			(xy 135.89 67.31) (xy 135.89 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "748c2911-17be-40f0-a3ce-7dfdbddaa726")
+		(uuid "a7b08976-f97d-4256-82ed-40cac7b4d3a9")
 	)
 	(wire
 		(pts
-			(xy 60.96 90.17) (xy 68.58 90.17)
+			(xy 242.57 92.71) (xy 246.38 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "781cb8de-637d-400f-bd1b-88ef047fc0c7")
+		(uuid "b6979d78-501f-4efa-8aa2-6b16aef3ef7c")
 	)
 	(wire
 		(pts
-			(xy 93.98 85.09) (xy 97.79 85.09)
+			(xy 140.97 137.16) (xy 153.67 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "863717c9-b931-471b-814b-44507c21c839")
+		(uuid "b854a212-7fd4-4e96-93cd-d3e0869d9490")
 	)
 	(wire
 		(pts
-			(xy 81.28 72.39) (xy 85.09 72.39)
+			(xy 165.1 118.11) (xy 173.99 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "867be7dc-6033-4ef8-ac79-d683abc9c353")
+		(uuid "bf667347-0246-4c7a-91ea-b2b87a192141")
 	)
 	(wire
 		(pts
-			(xy 93.98 90.17) (xy 106.68 90.17)
+			(xy 165.1 99.06) (xy 173.99 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a6f5cb5-2c5a-420c-9930-0211efacd30c")
+		(uuid "c85086ec-244c-4d0d-9dfa-e216b62f1adf")
 	)
 	(wire
 		(pts
-			(xy 93.98 102.87) (xy 106.68 102.87)
+			(xy 185.42 43.18) (xy 171.45 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8acfbfd0-bc3b-4bc2-b671-4d6656a36d36")
+		(uuid "ccf432ca-db2b-4e86-bd87-de93b42eeb37")
 	)
 	(wire
 		(pts
-			(xy 93.98 110.49) (xy 97.79 110.49)
+			(xy 135.89 57.15) (xy 135.89 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "908f49da-52c0-4d7e-afc0-1aa5cd1fb530")
+		(uuid "cd19fad2-5dde-45c4-8ec3-1ecb75a504d3")
 	)
 	(wire
 		(pts
-			(xy 115.57 58.42) (xy 115.57 67.31)
+			(xy 153.67 118.11) (xy 165.1 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9836d78f-e72f-4615-b850-9ea1d21093c8")
+		(uuid "dd619666-b3e3-4e87-8d40-60a591b6fc6d")
 	)
 	(wire
 		(pts
-			(xy 81.28 102.87) (xy 93.98 102.87)
+			(xy 128.27 118.11) (xy 140.97 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3af5c2a-9f8b-4106-8863-0e1370480f48")
+		(uuid "e0bebde3-7845-4b1c-8cfc-0814b330d8e2")
 	)
 	(wire
 		(pts
-			(xy 53.34 40.64) (xy 62.23 40.64)
+			(xy 123.19 57.15) (xy 123.19 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6b56801-dbd1-4b99-9577-1531f73459d0")
+		(uuid "e50f05c1-c99a-4429-9e67-d46b248e0f65")
 	)
 	(wire
 		(pts
-			(xy 115.57 80.01) (xy 115.57 92.71)
+			(xy 185.42 34.29) (xy 185.42 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3d467cc-1c32-48ab-9ff6-03a2487eaa93")
+		(uuid "e845fc73-52e3-437f-994c-84c28219ed90")
 	)
 	(wire
 		(pts
-			(xy 68.58 115.57) (xy 81.28 115.57)
+			(xy 158.75 36.83) (xy 163.83 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c57454d7-c5b8-40db-97a3-f26774110539")
+		(uuid "eee2602d-c2d1-4165-ab07-18ef90142cf9")
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 90.17 67.31)
+			(xy 148.59 105.41) (xy 148.59 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6523d68-84e6-47ba-a942-42389ed2a02a")
+		(uuid "f74769a4-0653-499b-a7ba-99d5e0da09b6")
 	)
 	(wire
 		(pts
-			(xy 93.98 72.39) (xy 97.79 72.39)
+			(xy 123.19 67.31) (xy 123.19 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1035768-a96b-4dd2-83cd-d5637ff176ce")
+		(uuid "f9fece6e-aeff-4c81-b6ae-184bb79e59f5")
 	)
 	(wire
 		(pts
-			(xy 106.68 97.79) (xy 110.49 97.79)
+			(xy 128.27 137.16) (xy 140.97 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3433895-94de-45a9-82e0-7202ab749484")
+		(uuid "ffe68e1b-4ca5-454c-977d-802165156c92")
 	)
-	(wire
-		(pts
-			(xy 106.68 72.39) (xy 110.49 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6a6eaaf-2d3e-48f1-9fc7-697a19141c38")
-	)
-	(wire
-		(pts
-			(xy 81.28 90.17) (xy 93.98 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9cbd803-1b01-4e50-83ca-d32ca9892411")
-	)
-	(wire
-		(pts
-			(xy 90.17 67.31) (xy 90.17 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6e28509-6d00-491e-84ce-6d37da9c87f4")
-	)
-	(wire
-		(pts
-			(xy 90.17 80.01) (xy 90.17 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec2b415c-c2c7-409a-97a4-27b330df9c4c")
-	)
-	(wire
-		(pts
-			(xy 106.68 110.49) (xy 110.49 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee9025a4-4802-42d8-a23e-2a2c0ce8c795")
-	)
-	(wire
-		(pts
-			(xy 115.57 92.71) (xy 115.57 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef0bf35c-d508-42ae-81cb-a30117ead298")
-	)
-	(wire
-		(pts
-			(xy 93.98 97.79) (xy 97.79 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f12f2540-1dee-4430-8c01-fa9954db032c")
-	)
-	(wire
-		(pts
-			(xy 102.87 80.01) (xy 102.87 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1384147-b07f-4b44-815a-5e0f67704da0")
-	)
-	(wire
-		(pts
-			(xy 77.47 92.71) (xy 77.47 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fec66db9-4fc3-43d6-a2b6-e7e3922f2d58")
-	)
-	(global_label "ROW1"
+	(global_label "ROW3"
 		(shape input)
-		(at 60.96 90.17 180)
+		(at 242.57 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ec5fe92-bb85-46e8-9d66-a1617d97a4d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.8166 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape input)
+		(at 201.93 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1935,9 +1836,9 @@
 			)
 			(justify right)
 		)
-		(uuid "277730fa-ab59-42f7-93f1-167a030e8c15")
+		(uuid "1d5380d8-1aa2-4420-bdb1-6f41660ffd85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.7134 90.17 0)
+			(at 194.1067 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,9 +1848,9 @@
 			)
 		)
 	)
-	(global_label "D-"
+	(global_label "COL1"
 		(shape input)
-		(at 53.34 43.18 0)
+		(at 135.89 57.15 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1957,9 +1858,9 @@
 			)
 			(justify left)
 		)
-		(uuid "4bfefd7a-eeae-49f5-8465-be940367e66b")
+		(uuid "2029e468-4aaa-45de-9269-a52ec0afa425")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.1676 43.18 0)
+			(at 135.89 49.3267 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,53 +1870,9 @@
 			)
 		)
 	)
-	(global_label "D+"
+	(global_label "COL1"
 		(shape input)
-		(at 53.34 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52893f01-5f31-4c8d-9f3f-cba8ccb4738f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.1676 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COL0"
-		(shape input)
-		(at 115.57 58.42 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "86ad9ccd-e1ba-4497-a79c-57ebaff63e1e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.57 50.5967 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ROW0"
-		(shape input)
-		(at 60.96 77.47 180)
+		(at 201.93 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2023,9 +1880,31 @@
 			)
 			(justify right)
 		)
-		(uuid "9fcc14d7-beac-476a-adc0-4a56717ed799")
+		(uuid "240f24f2-bab2-4727-ba8b-1cf8be4a8b41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.7134 77.47 0)
+			(at 194.1067 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape input)
+		(at 201.93 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36eda315-c8aa-4283-9485-fc39c28e12a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.1067 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +1916,29 @@
 	)
 	(global_label "ROW3"
 		(shape input)
-		(at 60.96 115.57 180)
+		(at 173.99 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68bb1132-e506-4b0c-908a-ff43ede9af81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.2366 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EC11SW"
+		(shape input)
+		(at 163.83 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2045,21 +1946,197 @@
 			)
 			(justify right)
 		)
-		(uuid "aba23325-4457-4b4f-87cd-78a0774010a5")
+		(uuid "68f3b961-7db0-44a6-9e69-e59201c33b42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.7134 115.57 0)
+			(at 153.3459 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape input)
+		(at 148.59 57.15 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "795b4b91-6d2c-48dd-b755-5abafefd92d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.59 49.3267 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EC11B"
+		(shape input)
+		(at 179.07 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ef0c705-13b5-4f43-ba7b-f8f3918b801e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 188.1632 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape input)
+		(at 123.19 57.15 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b985bea-df29-4cb5-8034-df863b065b72")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 49.3267 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EC11B"
+		(shape input)
+		(at 242.57 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a618f881-260a-4224-bb80-da8f4c459ae6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.6632 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "ROW2"
 		(shape input)
-		(at 60.96 102.87 180)
+		(at 173.99 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b69023e2-70ad-42c6-be3e-6dd2fd05c21c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.2366 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EC11A"
+		(shape input)
+		(at 179.07 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be2b0357-1953-4c5e-b32d-b9e65e48b269")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.9818 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape input)
+		(at 160.02 57.15 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c67ba0d6-5c1f-40fe-85e6-488fe148fe0c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 49.3267 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW0"
+		(shape input)
+		(at 173.99 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cfb1f1e8-231a-46e2-a961-6d32e5632c63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.2366 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW2"
+		(shape input)
+		(at 201.93 107.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2067,9 +2144,9 @@
 			)
 			(justify right)
 		)
-		(uuid "b2842a51-4856-4443-89d4-2dd9f6ad8e92")
+		(uuid "d7034734-b077-4d36-aab5-45c7d5fa157c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.7134 102.87 0)
+			(at 193.6834 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,9 +2156,53 @@
 			)
 		)
 	)
-	(global_label "COL0"
+	(global_label "ROW1"
 		(shape input)
-		(at 102.87 58.42 90)
+		(at 201.93 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da2c85ae-dad5-44bf-a4d7-fd116b6ce086")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.6834 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape input)
+		(at 201.93 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1167a69-5416-4aec-8546-1c93ec272013")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.1067 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EC11SW"
+		(shape input)
+		(at 242.57 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2089,9 +2210,9 @@
 			)
 			(justify left)
 		)
-		(uuid "c96e8f2c-4b19-44b1-91cf-1d7ed47ccbb6")
+		(uuid "e5dfc2cf-391b-46a2-8982-8f6e19db8718")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 50.5967 90)
+			(at 253.0541 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2101,9 +2222,9 @@
 			)
 		)
 	)
-	(global_label "COL0"
+	(global_label "EC11A"
 		(shape input)
-		(at 90.17 58.42 90)
+		(at 242.57 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2111,9 +2232,9 @@
 			)
 			(justify left)
 		)
-		(uuid "cf38db1f-8107-4845-a0c9-37ce239fe30b")
+		(uuid "ec15f835-098e-4fbd-9cbd-0e8c3302b63e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 50.5967 90)
+			(at 251.4818 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,9 +2244,9 @@
 			)
 		)
 	)
-	(global_label "COL0"
+	(global_label "ROW1"
 		(shape input)
-		(at 77.47 72.39 90)
+		(at 173.99 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2133,64 +2254,68 @@
 			)
 			(justify left)
 		)
-		(uuid "ff692dea-dc11-410d-bbcc-86178e5630a7")
+		(uuid "eddfec61-b57b-4c43-b0b5-6d4f7f30d668")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 64.5667 90)
+			(at 182.2366 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW0"
+		(shape input)
+		(at 201.93 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd82cc60-2ce3-42d2-9431-1c631a09f1b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.6834 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(symbol
-		(lib_id "random-keyboard-parts:Molex-0548190589")
-		(at 45.72 45.72 90)
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 138.43 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0035702d-207d-43ad-875c-7d0f25589dce")
-		(property "Reference" "USB1"
-			(at 43.815 31.75 90)
+		(uuid "018a269f-fc7d-46c3-9d37-3439074a464f")
+		(property "Reference" "S9"
+			(at 138.43 100.33 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Molex-0548190589"
-			(at 43.815 34.29 90)
+		(property "Value" "Keyswitch"
+			(at 138.43 102.87 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 45.72 0)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 138.43 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2198,45 +2323,429 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "280240ab-469a-4649-949a-e42b1aeac898")
+		(property "Datasheet" "~"
+			(at 138.43 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "96b5b1e9-5580-4917-b53f-a3d959ea978f")
-		)
-		(pin "6"
-			(uuid "b13cd780-aa7a-4f32-9213-0bda1e65cb07")
-		)
-		(pin "4"
-			(uuid "b1371936-5c07-4218-b15f-f15e7a6df71f")
-		)
-		(pin "5"
-			(uuid "f27d5e55-8aa0-403e-a3db-4da0a848e0f6")
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 138.43 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "c4f3ccf6-7187-4d13-873c-8108c6f4f860")
+			(uuid "8adff6de-6c16-4a2d-a9bf-eba21e3baa10")
+		)
+		(pin "2"
+			(uuid "e16c16f1-b1d5-4bb6-bba7-60d4250d9de5")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 153.67 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1270a370-b17d-4a6e-94f9-baee90f77b1e")
+		(property "Reference" "D29"
+			(at 156.21 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 156.21 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1510e3c5-dcd8-44ca-b051-9c9570431477")
+		)
+		(pin "1"
+			(uuid "acf5343c-9e23-4415-b916-5ed0a75e8d12")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 128.27 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17f5017e-4ddd-4009-bd67-a4e152dbb707")
+		(property "Reference" "D19"
+			(at 130.81 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 130.81 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a011fae-5354-4c60-a381-13ac5c83958b")
+		)
+		(pin "1"
+			(uuid "707cf993-0c7a-405a-9d84-1793b0216eb8")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 138.43 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "184e308d-3bfc-4313-a32f-1b1808af8f46")
+		(property "Reference" "S5"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 138.43 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "220a6cc6-39e5-4271-be21-d55508782e39")
+		)
+		(pin "2"
+			(uuid "e6f93abc-5dc1-4d64-b39f-5147249d3a6c")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 125.73 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "426f1651-aecc-46ba-889b-923b127bb613")
+		(property "Reference" "S8"
+			(at 125.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 125.73 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 125.73 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 125.73 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e01a3455-f16c-4e17-8417-50acbcc2a366")
+		)
+		(pin "2"
+			(uuid "7e25f4ba-87e0-4029-a02b-870cc2630470")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 138.43 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43ca46c1-2cef-4248-9b6d-3674bd98b262")
+		(property "Reference" "S1"
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 138.43 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 138.43 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 138.43 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03edf78f-e403-490f-80e0-6f0e85c831f5")
+		)
+		(pin "2"
+			(uuid "3a671e7d-fd83-44e9-99d2-2dc57b0b6336")
 		)
 		(instances
 			(project ""
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "USB1")
+					(reference "S1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 68.58 113.03 90)
+		(lib_id "Device:D")
+		(at 165.1 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "02341fe4-8196-47e9-9553-5bbcb0f6c640")
-		(property "Reference" "D12"
-			(at 71.12 111.7599 90)
+		(uuid "4dd67101-6283-433d-b9aa-612dee57bdd9")
+		(property "Reference" "D26"
+			(at 167.64 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2244,8 +2753,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 71.12 114.2999 90)
+		(property "Value" "D"
+			(at 167.64 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2253,8 +2762,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 68.58 113.03 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 165.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,7 +2772,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 113.03 90)
+			(at 165.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2271,8 +2780,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 68.58 113.03 0)
+		(property "Description" "Diode"
+			(at 165.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2281,7 +2790,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 68.58 113.03 0)
+			(at 165.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2290,7 +2799,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 113.03 0)
+			(at 165.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,1298 +2807,49 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "509636c2-8d42-4dbb-b36a-6db2d4e00fa3")
-		)
 		(pin "2"
-			(uuid "fa9b544d-bb2f-4a27-a783-96ddba38c8c7")
+			(uuid "1b7a5650-7813-43b2-a945-d2c602439479")
+		)
+		(pin "1"
+			(uuid "b1948022-a3bb-4f87-b24c-c2d694f8fe5d")
 		)
 		(instances
 			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D12")
+					(reference "D26")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 93.98 87.63 90)
+		(lib_id "MOUDLE-SEEEDUINO-XIAO:MOUDLE-SEEEDUINO-XIAO")
+		(at 220.98 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0bf44280-065e-4e9e-ad9f-59d6245a8864")
-		(property "Reference" "D6"
-			(at 96.52 86.3599 90)
+		(uuid "5238c21e-6c81-4136-a5b3-3c09289cdcb9")
+		(property "Reference" "U1"
+			(at 222.25 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 96.52 88.8999 90)
+		(property "Value" "MOUDLE-SEEEDUINO-XIAO"
+			(at 222.25 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 93.98 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fecd129a-67ec-458b-a82e-bd034570c5cd")
-		)
-		(pin "2"
-			(uuid "fa655eda-f893-4103-abd9-93a33e9ee3d3")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 86.36 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0cfdbfc7-5540-49ac-89b0-ab2e68aa5077")
-		(property "Reference" "MX9"
-			(at 87.2552 87.63 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 87.2552 90.17 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.485 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.485 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "83bd7fd9-49b8-449c-9eab-f90f677282fc")
-		)
-		(pin "1"
-			(uuid "20fededb-5903-44bb-a133-f68874c7d837")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 99.06 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f526cae-92c8-4e3a-93f8-4653b78cef49")
-		(property "Reference" "MX2"
-			(at 99.9552 62.23 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 99.9552 64.77 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.185 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.185 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0cb94d97-5b67-4d76-91e5-0537147f5f3e")
-		)
-		(pin "1"
-			(uuid "0b16809d-354f-4ddf-a8d2-9378727bd429")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 93.98 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1242d05a-5826-4c1b-9306-dd9181b86b42")
-		(property "Reference" "D10"
-			(at 96.52 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 96.52 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 93.98 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "136ced16-7b95-4166-9d08-daea8903beb0")
-		)
-		(pin "2"
-			(uuid "95b7218b-cb06-445c-a31f-3771f4992658")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 111.76 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "139c5337-0e58-4cee-8f5a-423343e4fa0c")
-		(property "Reference" "MX15"
-			(at 112.6552 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 112.6552 102.87 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.885 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.885 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5930d3b1-aa90-46d9-bb10-274138366a6f")
-		)
-		(pin "1"
-			(uuid "c7c156a7-3644-4ebe-805f-90aee8e1bc50")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 81.28 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a7fed99-ee4b-4216-b000-ae7cd0d8947e")
-		(property "Reference" "D9"
-			(at 83.82 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 83.82 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "99511b8d-bcd5-41d9-a105-bf61cf799a5c")
-		)
-		(pin "2"
-			(uuid "5d317eb4-6362-4db5-9d5f-6b4bcb367a05")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 106.68 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28fceb2f-dcfa-449e-b391-cbf2d6baea9d")
-		(property "Reference" "D11"
-			(at 109.22 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 109.22 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e3f7bcb2-25cd-4398-b9fc-29cdac7499cc")
-		)
-		(pin "2"
-			(uuid "e10b1262-8344-4c52-b7a9-9706f7940150")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 68.58 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "302dbd35-504f-480f-ac0c-6091c284000f")
-		(property "Reference" "D4"
-			(at 71.12 86.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 71.12 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 68.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 68.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fd2f2bd-194d-4638-b4e6-7a626c1fbff2")
-		)
-		(pin "2"
-			(uuid "70d5ec0d-a758-477e-b5a0-bae801936521")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Polyfuse_Small")
-		(at 71.12 40.64 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38560f4f-b183-42a7-827b-ac422e70ee47")
-		(property "Reference" "F1"
-			(at 71.12 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA"
-			(at 71.12 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
-			(at 71.12 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "76551bc1-aec8-4297-96dc-5bf3f784f022")
-		)
-		(pin "1"
-			(uuid "ea2c2c93-2046-4abc-9fa6-1cb630bbd6a7")
-		)
-		(instances
-			(project ""
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 73.66 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f27093f-f6c8-43d6-895a-ac9ad3614f6f")
-		(property "Reference" "MX12"
-			(at 74.5552 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 74.5552 102.87 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.785 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.785 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5b439bf4-c234-4729-a2c7-217c5ff2069d")
-		)
-		(pin "1"
-			(uuid "3ff97f40-bd31-446e-ac41-7739861cfb2a")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 86.36 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "445fe65a-8f94-4934-a1d1-4e48eef659ec")
-		(property "Reference" "MX13"
-			(at 87.2552 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 87.2552 102.87 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.485 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.485 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "34fc907d-53fb-4adb-9eee-98ceda4656e2")
-		)
-		(pin "1"
-			(uuid "8d88e35b-ca4c-4416-9c6b-e1f09ca36be5")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 93.98 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f963b3f-b9fc-4bc0-b343-36247fa64f97")
-		(property "Reference" "D14"
-			(at 96.52 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 96.52 114.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 93.98 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6d9f3db0-cdef-466f-aa2e-dc15fad97811")
-		)
-		(pin "2"
-			(uuid "7ff405da-ef93-44ff-be93-2d6b79a9bdda")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 99.06 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a2ed080-aab0-48aa-81c3-fed1daf187a7")
-		(property "Reference" "MX10"
-			(at 99.9552 87.63 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 99.9552 90.17 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.185 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.185 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c5c0933c-8a7e-436c-af58-ca54caf2fded")
-		)
-		(pin "1"
-			(uuid "4a89a223-7e72-43bd-9b3f-21447d363d7f")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 111.76 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ea711e2-7b97-4f99-b883-780dfe32b506")
-		(property "Reference" "MX11"
-			(at 112.6552 87.63 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 112.6552 90.17 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.885 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.885 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3c4a441d-a38d-4733-bb79-f1b4cd9c428e")
-		)
-		(pin "1"
-			(uuid "24780411-9627-4c31-b2d4-b8d25c8c3633")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 81.28 113.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f95d614-cfc3-42bf-a1e5-af9a146a8e02")
-		(property "Reference" "D13"
-			(at 83.82 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 83.82 114.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6beee0b-e6b1-4270-83fe-2894f24f6805")
-		)
-		(pin "2"
-			(uuid "6b53a126-f48f-4d95-a295-1776eb89613b")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 93.98 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66781be9-6956-4b12-84d6-6cbca19e6c2c")
-		(property "Reference" "D2"
-			(at 96.52 73.6599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 96.52 76.1999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 93.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 93.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 93.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d417f43-5ea5-485b-a427-5f40bfdd9d6d")
-		)
-		(pin "2"
-			(uuid "faefd560-aded-4c84-b89a-31f937fff2c3")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "xiao-rp2040:XIAO-RP2040")
-		(at 223.52 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67bbac06-1569-41ae-ae65-da4a48744c5b")
-		(property "Reference" "M1"
-			(at 224.155 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XIAO-RP2040"
-			(at 224.155 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 73.66 0)
+		(property "Footprint" "XIAO_PCB:MOUDLE14P-2.54-21X17.8MM"
+			(at 204.47 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3598,7 +2858,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 73.66 0)
+			(at 204.47 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,7 +2867,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 73.66 0)
+			(at 220.98 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,155 +2875,85 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "15f390a0-827d-4e28-84f6-cfd5df9c4cac")
-		)
-		(pin "10"
-			(uuid "f9887699-e94a-4556-ae53-4640c0f4795a")
-		)
-		(pin "11"
-			(uuid "8a87fd38-ca3d-4e3b-915a-d1a1c4ba8cc1")
-		)
-		(pin "14"
-			(uuid "084c3ae7-e6fb-4e9f-9c90-0c5297ccdac8")
-		)
-		(pin "5"
-			(uuid "eb8b0ed4-7acf-46a0-a57c-de5b185fe3ac")
-		)
-		(pin "6"
-			(uuid "a1c624af-7d9c-4b35-89d8-1aa5a9e661e5")
-		)
 		(pin "1"
-			(uuid "f5d9591d-c8a3-45f9-935c-7c3fc074c4d1")
-		)
-		(pin "3"
-			(uuid "a3a35bab-ddec-4776-845e-00f8da52fda3")
+			(uuid "63215643-1acc-4f6e-ba25-fafb03690b4f")
 		)
 		(pin "12"
-			(uuid "2996a7f4-a68a-40c4-82f9-e8d878806859")
+			(uuid "01a447b0-4669-4b97-ac2d-817965b0c04f")
 		)
-		(pin "7"
-			(uuid "c0c13adf-14f6-47b8-b19d-f9da2170e1b6")
-		)
-		(pin "9"
-			(uuid "635850e0-eb68-40bd-a605-48f2156eefdb")
-		)
-		(pin "4"
-			(uuid "d8dbef27-7afa-45c0-bd1b-6ab63c64a9fe")
-		)
-		(pin "8"
-			(uuid "ed7dc69f-d194-428f-ae27-8dc03f1c9158")
+		(pin "6"
+			(uuid "caef1756-6302-4e21-8caf-1b116d877688")
 		)
 		(pin "13"
-			(uuid "5f18066e-37ca-4347-baf3-07e3103abfc5")
+			(uuid "242e042c-4df2-4452-a89d-e7ae99e0f361")
+		)
+		(pin "14"
+			(uuid "7831fc09-bf44-4f42-9b5e-af0ec0008606")
+		)
+		(pin "3"
+			(uuid "67d5e49a-21ef-4c6a-b18f-e975f5f5663f")
+		)
+		(pin "7"
+			(uuid "c3b39b6a-5c18-4e3a-a45b-cde89da7814d")
+		)
+		(pin "8"
+			(uuid "024e96a4-2a4a-428e-be22-75fdb548bda1")
+		)
+		(pin "9"
+			(uuid "d5c22f43-5b47-496c-9e0b-2648fbef8440")
+		)
+		(pin "11"
+			(uuid "71f6eb34-e61a-46a5-809a-e167918c576e")
+		)
+		(pin "4"
+			(uuid "5cf99e4b-e6b5-4592-a2aa-1367abee763f")
+		)
+		(pin "10"
+			(uuid "8cb107be-da93-42e3-992f-dbd873bfcc37")
+		)
+		(pin "2"
+			(uuid "bd0bc5f4-d771-4228-a830-bfd7e58037b4")
+		)
+		(pin "5"
+			(uuid "3c441e67-ed00-4dbd-83a4-85cf67a25864")
 		)
 		(instances
 			(project ""
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "M1")
+					(reference "U1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 99.06 106.68 0)
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 138.43 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6b0e7c96-8e53-4d85-ba27-bffdfc43bc65")
-		(property "Reference" "MX14"
-			(at 99.9552 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 99.9552 102.87 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.185 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.185 107.315 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 106.68 0)
+		(uuid "537e5ff8-519d-46f1-81f3-18793c60de80")
+		(property "Reference" "S13"
+			(at 138.43 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "32087f41-c2fa-485a-a885-6b74d45688f8")
-		)
-		(pin "1"
-			(uuid "89c29fd4-be7b-475e-856d-628121c6f978")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 106.68 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7369f8ad-339b-4565-8e16-9e879a046bc7")
-		(property "Reference" "D3"
-			(at 109.22 73.6599 90)
+		(property "Value" "Keyswitch"
+			(at 138.43 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 109.22 76.1999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 74.93 90)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 138.43 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3772,7 +2962,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 74.93 90)
+			(at 138.43 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,8 +2970,78 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 106.68 74.93 0)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 138.43 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62c7cfd6-1938-457e-89c7-2529765a0951")
+		)
+		(pin "2"
+			(uuid "8c507775-7d9a-4c5e-9bc2-dcd9e2e2a66a")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 140.97 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a8ee143-cd1d-4f22-9a6c-eaed8a831b36")
+		(property "Reference" "D16"
+			(at 143.51 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 143.51 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 140.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 140.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +3050,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 106.68 74.93 0)
+			(at 140.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,158 +3059,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 74.93 0)
+			(at 140.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "acb91177-f6af-411b-aebe-19aceddd8058")
 		)
 		(pin "2"
-			(uuid "a5e2a71e-32ea-4ca7-8ac5-a4950626224c")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7843c5f1-6f52-439d-9ea7-eaf4060f7240")
-		(property "Reference" "#PWR02"
-			(at 81.28 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 81.28 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+			(uuid "a22633b8-bbd3-4acb-afb0-a053a42336b8")
 		)
 		(pin "1"
-			(uuid "551c8b1b-1377-49a5-a328-8ab97b5a6e16")
+			(uuid "de9bda9c-8826-4e57-87a9-5a3957735d40")
 		)
 		(instances
 			(project ""
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 111.76 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8835d642-2721-405e-8fd3-5273b401cc46")
-		(property "Reference" "MX3"
-			(at 112.6552 62.23 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 112.6552 64.77 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.885 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.885 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "30ba1477-c265-4ac6-8ceb-fd7d46c6c48b")
-		)
-		(pin "1"
-			(uuid "31348ae9-8d45-4bb8-834d-435fa91458f8")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX3")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -3958,16 +3084,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 50.8 0)
+		(at 256.54 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8b750238-581c-45e8-b245-b3b8ed5c2a64")
-		(property "Reference" "#PWR03"
-			(at 55.88 57.15 0)
+		(uuid "5cdd5bbb-4ba2-444f-9af5-00d7379b041f")
+		(property "Reference" "#PWR08"
+			(at 256.54 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3976,7 +3102,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 55.88 0)
+			(at 256.54 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3984,7 +3110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 50.8 0)
+			(at 256.54 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3993,7 +3119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 50.8 0)
+			(at 256.54 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4002,7 +3128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 50.8 0)
+			(at 256.54 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,47 +3137,44 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa3083f8-7a75-4448-86a5-5848849c4943")
+			(uuid "0337dc42-5444-40e3-8f39-7af840bbcc25")
 		)
 		(instances
-			(project ""
+			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "#PWR03")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 81.28 87.63 90)
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 151.13 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b2d770d-5785-43cc-a9b3-02ddc1e8fb6c")
-		(property "Reference" "D5"
-			(at 83.82 86.3599 90)
+		(uuid "61d75b31-d332-438f-bde1-7754feb2a914")
+		(property "Reference" "S6"
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 83.82 88.8999 90)
+		(property "Value" "Keyswitch"
+			(at 151.13 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 81.28 87.63 90)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4060,7 +3183,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 87.63 90)
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4068,26 +3191,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 87.63 0)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 151.13 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,304 +3201,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d12eade-cc4a-4d52-bcd7-d229f42af9fe")
+			(uuid "9c7e36c4-151c-40ad-9ae4-20898cad270a")
 		)
 		(pin "2"
-			(uuid "6af4f7f6-9612-4512-b4b5-b646069880f8")
+			(uuid "6f145b61-d8fc-41e0-8504-fec5657ae202")
 		)
 		(instances
 			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D5")
+					(reference "S6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 99.06 81.28 0)
+		(lib_id "Device:D")
+		(at 140.97 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9c7ba6a8-4d4f-46d5-9899-7674fd7c759b")
-		(property "Reference" "MX6"
-			(at 99.9552 74.93 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 99.9552 77.47 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.185 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.185 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "942d715d-e4a4-4a32-aaed-2f009edf6f0c")
-		)
-		(pin "1"
-			(uuid "1857a03f-b535-49d5-bcf1-59e6b5bf74a8")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 111.76 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a797f6a0-fb03-4599-9a91-e202d7da5a6c")
-		(property "Reference" "MX7"
-			(at 112.6552 74.93 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 112.6552 77.47 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.885 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.885 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "94a4b7de-281a-42df-8679-738f2b850f5b")
-		)
-		(pin "1"
-			(uuid "e590f81f-69c4-4cb3-aa37-9a1003828f76")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 86.36 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab1a2cd3-15bc-49a7-a32b-882a1bb309cb")
-		(property "Reference" "MX1"
-			(at 87.2552 62.23 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 87.2552 64.77 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.485 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.485 69.215 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f5bae2b1-6bff-4c3f-b64e-4b3dd3ab03e9")
-		)
-		(pin "1"
-			(uuid "4a3ba8be-749e-411f-a25b-0857836f39c1")
-		)
-		(instances
-			(project ""
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 86.36 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd87ac72-8e23-4548-8a22-ab64366bfede")
-		(property "Reference" "MX5"
-			(at 87.2552 74.93 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 87.2552 77.47 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.485 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.485 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "07e90f02-f0b2-45d3-985f-cb3a251fb327")
-		)
-		(pin "1"
-			(uuid "f37cc322-22be-4f6f-87ee-74e0e5f362f8")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 106.68 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be1b099b-0106-456f-bde6-50c59e6017be")
-		(property "Reference" "D7"
-			(at 109.22 86.3599 90)
+		(uuid "67554870-3396-46dc-9b00-e64bb6cc4026")
+		(property "Reference" "D20"
+			(at 143.51 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,8 +3234,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 109.22 88.8999 90)
+		(property "Value" "D"
+			(at 143.51 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,8 +3243,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.68 87.63 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4420,7 +3253,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 87.63 90)
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4428,8 +3261,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 106.68 87.63 0)
+		(property "Description" "Diode"
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4438,7 +3271,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 106.68 87.63 0)
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4447,7 +3280,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 87.63 0)
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,33 +3288,33 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "8b6d0f5b-e935-411a-8831-950625560a3c")
-		)
 		(pin "2"
-			(uuid "cfa0a3f0-2bce-4dee-8b2a-b0ad48b2d799")
+			(uuid "5ca9e7c2-4613-4175-ae21-24cc9d5a0c1a")
+		)
+		(pin "1"
+			(uuid "ff95238d-ccad-46d7-bfd1-6938f6f4ca5c")
 		)
 		(instances
 			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D7")
+					(reference "D20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 106.68 113.03 90)
+		(lib_id "Device:D")
+		(at 165.1 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bf6438d8-833a-4459-b0b2-e2203e9bde19")
-		(property "Reference" "D15"
-			(at 109.22 111.7599 90)
+		(uuid "68f507b7-f4da-4f30-83e5-11c391a3937e")
+		(property "Reference" "D22"
+			(at 167.64 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,8 +3322,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 109.22 114.2999 90)
+		(property "Value" "D"
+			(at 167.64 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,8 +3331,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.68 113.03 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4508,7 +3341,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 113.03 90)
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,230 +3349,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 106.68 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 106.68 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 106.68 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a494b6aa-3947-4f71-981b-f01e14166698")
-		)
-		(pin "2"
-			(uuid "3aa363df-0422-44c1-8da8-8cc71e6c0499")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 73.66 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c52dc176-c4d7-475b-bb49-41ba1cb3d4e7")
-		(property "Reference" "MX4"
-			(at 74.5552 74.93 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 74.5552 77.47 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.785 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.785 81.915 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8660f6f1-e091-4efe-b56a-441ffe56d216")
-		)
-		(pin "1"
-			(uuid "8adaaf6e-7682-463c-a018-baa9367d986b")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 62.23 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1f8ed14-c892-42ff-993c-71648db931da")
-		(property "Reference" "#PWR01"
-			(at 62.23 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 62.23 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 62.23 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37da5ce6-0cbd-4f92-ba29-faded5a740aa")
-		)
-		(instances
-			(project ""
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 68.58 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc0efda0-d45d-48ea-bdf3-5e08ed55114f")
-		(property "Reference" "D8"
-			(at 71.12 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 71.12 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 68.58 100.33 0)
+		(property "Description" "Diode"
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4748,7 +3359,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 68.58 100.33 0)
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4757,75 +3368,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd60af7f-c049-477a-9b5a-ca24084decd3")
-		)
-		(pin "2"
-			(uuid "0d496394-9797-46b0-a0c5-94fac7378dc8")
-		)
-		(instances
-			(project "macropad"
-				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MX_Alps_Hybrid:MX-NoLED")
-		(at 73.66 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0034371-5ed9-4e72-a333-c8895cc5a930")
-		(property "Reference" "MX8"
-			(at 74.5552 87.63 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "MX-NoLED"
-			(at 74.5552 90.17 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.785 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.785 94.615 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 93.98 0)
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,32 +3377,32 @@
 			)
 		)
 		(pin "2"
-			(uuid "34ce3310-bae0-4145-98c5-db978541ca6a")
+			(uuid "7a68f6e2-5dac-4488-a1f5-268368a1fd9a")
 		)
 		(pin "1"
-			(uuid "447c3f00-3bec-4459-a7ef-3262059c1b17")
+			(uuid "bf71ee82-aecf-40b3-bae7-bc090c3749d4")
 		)
 		(instances
 			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
-					(reference "MX8")
+					(reference "D22")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 81.28 74.93 90)
+		(lib_id "Device:D")
+		(at 128.27 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1a52195-1bec-41d2-b536-47d2c7bb9945")
+		(uuid "6a515ef1-907c-45a0-8d79-d0a5748dd842")
 		(property "Reference" "D1"
-			(at 83.82 73.6599 90)
+			(at 130.81 74.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4867,8 +3410,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D_Small"
-			(at 83.82 76.1999 90)
+		(property "Value" "D"
+			(at 130.81 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4876,8 +3419,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 81.28 74.93 90)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4886,7 +3429,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 74.93 90)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,8 +3437,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
-			(at 81.28 74.93 0)
+		(property "Description" "Diode"
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,7 +3447,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 81.28 74.93 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4913,7 +3456,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 74.93 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4921,16 +3464,1696 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "3e097184-14d0-4309-9702-e2638a0508c7")
-		)
 		(pin "2"
-			(uuid "e11465de-08bb-4161-bc9b-0d623e031be3")
+			(uuid "bb26b66a-deca-44b0-a7af-44050ee48806")
+		)
+		(pin "1"
+			(uuid "5fa8b5aa-c257-451e-9986-40ec2fc97aed")
 		)
 		(instances
 			(project "macropad"
 				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 151.13 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6aa82c91-080e-4685-a7da-ab0868862867")
+		(property "Reference" "S10"
+			(at 151.13 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 151.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 151.13 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 151.13 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f1ccd43-d38a-417f-952a-cf14b8303cc0")
+		)
+		(pin "2"
+			(uuid "dfbc1926-24db-46ba-992f-f83a99c77601")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 162.56 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "730b7199-885e-455a-b326-a9dda56fdea5")
+		(property "Reference" "S3"
+			(at 162.56 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 162.56 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9da6373b-97c2-4852-a11c-79449fc72de4")
+		)
+		(pin "2"
+			(uuid "4918acd3-be53-4b50-8cbe-08a8254d82b1")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 165.1 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7daf3617-f237-45fe-95ce-455357efa4c1")
+		(property "Reference" "D30"
+			(at 167.64 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 167.64 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "04726f1f-1fb6-4137-8398-ce690d654185")
+		)
+		(pin "1"
+			(uuid "38376a8d-3990-4ea1-b9df-f26c4cd3b377")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 165.1 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e66ede9-0627-423c-a092-eb0cf0f1f352")
+		(property "Reference" "D18"
+			(at 167.64 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 167.64 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "01125416-777d-48e1-8e60-21d4e94acf67")
+		)
+		(pin "1"
+			(uuid "21300c58-0760-4032-8fc1-7ea76d286c33")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 125.73 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86f3c9e3-f89a-49b1-8a03-5ba3aff4a2d1")
+		(property "Reference" "S16"
+			(at 125.73 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 125.73 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 125.73 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "432838cf-cae0-4b79-8c4c-97c8b408e8d0")
+		)
+		(pin "2"
+			(uuid "78284bb7-07f6-4bcd-9cc5-98df82e4ba7b")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 125.73 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "880f70c0-24bf-407f-a669-8b7f7bcf4647")
+		(property "Reference" "S4"
+			(at 125.73 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 125.73 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 125.73 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 125.73 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95c7d53c-15fd-4cb0-9b28-cb7c6191a5e5")
+		)
+		(pin "2"
+			(uuid "9b2ab5c2-103d-4b1f-a1f9-c7dba362c836")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 128.27 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e6eccf6-7d9f-4e83-88d5-cd832179ef72")
+		(property "Reference" "D27"
+			(at 130.81 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 130.81 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3e545e7-de9a-4c58-afcb-3777f4ee33ac")
+		)
+		(pin "1"
+			(uuid "9f45328e-9b9f-4d39-b8d5-c612e4f7ac7f")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 162.56 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96183fc8-80a2-4e70-b1fd-92db3cb98d77")
+		(property "Reference" "S7"
+			(at 162.56 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 162.56 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 162.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b610dc42-8885-42a5-ad8b-ef2d87ed0800")
+		)
+		(pin "2"
+			(uuid "059fbf67-e2d7-4610-a844-8d3e2673c686")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 140.97 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f1c110c-43e5-4125-8f00-6933ea2836ef")
+		(property "Reference" "D24"
+			(at 143.51 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 143.51 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "498b49e2-2e7d-4a2d-aa57-5b50174f1239")
+		)
+		(pin "1"
+			(uuid "e74f6a30-9084-4696-bbff-a06616e1a7f5")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 153.67 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5673bcd-f4dd-4a51-bfd7-c6153fcade62")
+		(property "Reference" "D21"
+			(at 156.21 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 156.21 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f45e8885-f809-4296-a06d-13075b4a29ad")
+		)
+		(pin "1"
+			(uuid "ce950b13-644e-4355-9145-c9cc765f77e2")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 171.45 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac2e8c03-cd23-4901-ae9a-2dc7115d9187")
+		(property "Reference" "SW1"
+			(at 171.45 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 171.45 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 175.26 38.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 40.894 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(at 171.45 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "bdd6956e-1729-4629-96d8-98f718ea3efc")
+		)
+		(pin "B"
+			(uuid "1e64788c-25d9-4cde-bfbe-6624371314e4")
+		)
+		(pin "C"
+			(uuid "a19a2656-abbf-4114-9a90-b80a145d00b0")
+		)
+		(pin "S2"
+			(uuid "689f60ff-a046-434f-8669-8fa3d1022df1")
+		)
+		(pin "S1"
+			(uuid "ba1c570f-7476-46c3-a257-784571706a7c")
+		)
+		(instances
+			(project ""
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 151.13 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad534f07-cd3c-419b-bbe9-0bafaa9c1aac")
+		(property "Reference" "S2"
+			(at 151.13 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 151.13 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 151.13 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 151.13 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cfbca34-4c41-4f76-8ab6-ee54ceb13ad3")
+		)
+		(pin "2"
+			(uuid "29b938fa-4fb5-4674-98d6-5c3efdfa9878")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 162.56 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3010c42-1efb-4de2-8ae1-9e4ea96ad4a0")
+		(property "Reference" "S11"
+			(at 162.56 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 162.56 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 162.56 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fd6b94e-b614-4439-81fa-06f67997d4c9")
+		)
+		(pin "2"
+			(uuid "569673eb-c36d-4177-9593-14c2406b2c45")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 140.97 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6f47853-5a71-407f-901a-e13a2bee3d76")
+		(property "Reference" "D28"
+			(at 143.51 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 143.51 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0c1b8b6c-98ec-4e4e-9843-af18486a2634")
+		)
+		(pin "1"
+			(uuid "838e5eb0-9234-4068-8494-c5ae9b90794f")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6662e47-effe-4ddb-9815-90b41970a358")
+		(property "Reference" "#PWR04"
+			(at 171.45 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d053b754-75bb-4f26-9913-6fb8ce142084")
+		)
+		(instances
+			(project ""
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 246.38 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8a9079b-ae28-437c-9ce0-f4145a42a223")
+		(property "Reference" "#PWR07"
+			(at 246.38 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 246.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 246.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "893b6171-803a-4367-9f4e-0c9dc1572097")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 153.67 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb6e7e07-f898-4b79-b764-39aa0c3e49ff")
+		(property "Reference" "D17"
+			(at 156.21 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 156.21 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68e11081-b5ac-46be-9763-79dea8682f67")
+		)
+		(pin "1"
+			(uuid "399d9857-42c8-4f54-a685-0a28e65a5259")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 128.27 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec234a3c-d3fa-4468-8539-34a8406dd7cf")
+		(property "Reference" "D23"
+			(at 130.81 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 130.81 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 128.27 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 128.27 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 128.27 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 128.27 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "03fcdc29-3f91-4108-96b3-c0528e345182")
+		)
+		(pin "1"
+			(uuid "a4344590-b280-496c-8b89-cbf18f08ef0e")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 151.13 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edefdf4f-4499-492f-a22e-ca7c835e69ff")
+		(property "Reference" "S14"
+			(at 151.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 151.13 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 151.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 151.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "546de084-6f58-44bb-b857-044456bf4c81")
+		)
+		(pin "2"
+			(uuid "92e43f7f-ec53-4f58-9c9e-f01e621c6d30")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 153.67 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee1e8c99-c4b8-4bec-9799-4e3e89b3c12e")
+		(property "Reference" "D25"
+			(at 156.21 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 156.21 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dcae60fc-2568-49ae-8fb9-d87bf7084fbe")
+		)
+		(pin "1"
+			(uuid "a172b8c0-1ad3-467f-8fee-64ca7672845e")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 125.73 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2ab15f0-111a-4bc6-8ee4-fbf02960f8a6")
+		(property "Reference" "S12"
+			(at 125.73 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 125.73 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 125.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 125.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54d140db-60c7-4f72-872e-37d1be8bb613")
+		)
+		(pin "2"
+			(uuid "da7467ab-c481-4f2a-b1da-c8b5dd2e019c")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 162.56 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff51abd9-fb0e-4c3b-b4ad-e7598a0849d5")
+		(property "Reference" "S15"
+			(at 162.56 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 162.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MX_Solderable:MX-Solderable-1U"
+			(at 162.56 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 162.56 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96f3ec55-fed5-4d18-bd9d-0d6ece72b559")
+		)
+		(pin "2"
+			(uuid "c9228d28-10e4-4429-a9b1-5a0caee81284")
+		)
+		(instances
+			(project "macropad"
+				(path "/50f80a6f-210d-4ab9-8d87-7f65f623c291"
+					(reference "S15")
 					(unit 1)
 				)
 			)
